@@ -1,4 +1,4 @@
-# Ember Bootstrap [![Travis](https://secure.travis-ci.org/jzajpt/ember-bootstrap.png)](http://travis-ci.org/jzajpt/ember-bootstrap)
+# Ember Bootstrap [![Travis](https://secure.travis-ci.org/emberjs-addons/ember-bootstrap.png)](http://travis-ci.org/emberjs-addons/ember-bootstrap)
 
 
 Ember Bootstrap is set of UI elements styled using Twitter Bootstrap (currently version 2) toolkit to use with Ember.js. The ultimate goal is to provide all elements from the Bootstrap toolkit.
@@ -24,6 +24,7 @@ Ember Bootstrap is set of UI elements styled using Twitter Bootstrap (currently 
 ### Forms
 * Text Field - Bootstrap.Forms.TextField
 * Text Area  - Bootstrap.Forms.TextArea
+* Select     - Bootstrap.Forms.Select
 
 
 ## Usage
@@ -171,7 +172,7 @@ Bootstrap.ModalPane.popup({
 ### Bootstrap.Forms.TextField
 ```html
 <script type="text/x-handlebars">
-  {{view EmBootstrap.TextField valueBinding="myObject.content" label="content"}}
+  {{view Bootstrap.Forms.TextField valueBinding="myObject.content" label="content"}}
 </script>
 ```
 
@@ -179,10 +180,16 @@ Bootstrap.ModalPane.popup({
 ### Bootstrap.Forms.TextArea
 ```html
 <script type="text/x-handlebars">
-  {{view EmBootstrap.TextArea valueBinding="myObject.content" label="content"}}
+  {{view Bootstrap.Forms.TextArea valueBinding="myObject.content" label="content"}}
 </script>
 ```
 
+### Bootstrap.Forms.Select
+```html
+<script type="text/x-handlebars">
+  {{view Bootstrap.Forms.Select contentBinding="content" valueBinding="selected" label="content"}}
+</script>
+```
 
 ## Unit Tests
 
